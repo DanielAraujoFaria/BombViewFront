@@ -4,7 +4,7 @@ export default function TopNavBar() {
 
     return (
         <nav className="flex justify-between items-center px-4 py-2 bg-[#0E0D17] w-full">
-            <ul className="text-4xl font-bold">
+            <ul className="text-3xl font-bold">
                 <Link href="/">BomBView</Link>
             </ul>
             <section className="bg-[#b6b6b6] rounded-[20px] w-[55rem] h-[2rem]"></section>

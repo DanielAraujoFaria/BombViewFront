@@ -17,7 +17,7 @@ export default function Filmes() {
         </div>
         
         <div className="mx-10">
-        <h2 className="flex justify-start p-5">"Grandes poderes trazem grandes responsabilidades."</h2>
+        <h2 className="flex justify-start p-5 italic">"Grandes poderes trazem grandes responsabilidades."</h2>
         <section className="bg-[#08070c] rounded-[20px] w-5/6 p-2 m-4">
           <h2 className="text-2xl font-semibold pt-6 ps-5" >Filmes</h2>
           <Conteudo />

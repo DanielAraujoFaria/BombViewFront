@@ -17,7 +17,7 @@ export default function Series() {
         </div>
         
         <div className="mx-10">
-        <h2 className="flex justify-start p-5">“Amigos não mentem”</h2>
+        <h2 className="flex justify-start p-5 italic">“Amigos não mentem”</h2>
         <section className="bg-[#08070c] rounded-[20px] w-5/6 p-2 m-4">
           <h2 className="text-2xl font-semibold pt-6 ps-5" >Series</h2>
           <Conteudo />

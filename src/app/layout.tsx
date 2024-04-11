@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Be_Vietnam_Pro } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const vietnam = Be_Vietnam_Pro({ 
+    weight: '500',
+    subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "BomBView",
@@ -16,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={inter.className}>{children}</body>
+      <body className={vietnam.className}>{children}</body>
     </html>
   );
 }
