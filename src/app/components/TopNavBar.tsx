@@ -8,7 +8,7 @@ export default function TopNavBar() {
                 <Link href="/">BomBView</Link>
             </ul>
             <section className="bg-[#b6b6b6] rounded-[20px] w-[55rem] h-[2rem]"></section>
-            <div className="w-16 rounded-full overflow-hidden">
+            <div className="w-16 rounded-full overflow-hidden border-3 border-[#3aff8cb0]">
                 <img src="https://i.pravatar.cc/300" alt="avatar do usuário" />
             </div>
         </nav>
