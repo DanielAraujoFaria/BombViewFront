@@ -7,8 +7,7 @@ export default function SideNavBar() {
             <ul>
                 <li className="flex flex-col space-y-4 pt-10">
                     <Link href="/filmes">Filmes</Link>
-                    <Link href="/series">Series</Link>
-                    <Link href="/jogos">Jogos</Link> 
+                    <Link href="/meusreviews">Reviews</Link>
                 </li>
             </ul>
         </nav>
