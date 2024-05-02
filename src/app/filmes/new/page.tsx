@@ -21,18 +21,19 @@ export default function Home() {
 
       <TopNavBar />
       
-      <div className="flex pt-10 w-full">
+      <div className="flex flex-col pt-10 w-4/6">
         
         <div className="mx-10">
         <section className="bg-[#0E0D17] rounded-[20px] w-full p-2 m-4">
             <div className="pt-5 pl-4">
                 <Link href="/filmes">
-                <Button variant="shadow" startContent={<ArrowLeft />} ></Button>
+                <Button isIconOnly color="default"><ArrowLeft /></Button>
                 </Link>
             </div>
           <h2 className="text-2xl font-semibold pt-6 ps-5 mb-2" >Filmes</h2>
           <form action={formAction} className="flex flex-col gap-3 m-6 rounded-[20px] min-w-[500px]">
             <h2 className="flex justify-start">É Hora do Cadastro!</h2>
+            <div class="group flex flex-col w-full group relative justify-end text-white data-[has-label=true]:mt-[calc(theme(fontSize.small)_+_10px)]">
                 <Input
                 key="nome"
                 label="Nome"
@@ -41,6 +42,7 @@ export default function Home() {
                 labelPlacement={"outside"}
                 isInvalid={state?.messageNome != ''}
                 errorMessage={state?.messageNome}
+    
                 />
                 <Input
                 key="genero"
@@ -78,6 +80,7 @@ export default function Home() {
                 isInvalid={state?.messageNome != ''}
                 errorMessage={state?.messageNome}
                 />
+            </div>
             <div className="flex justify-around mt-4">
                 <Link href="/filmes">
                     <SubmitButton />

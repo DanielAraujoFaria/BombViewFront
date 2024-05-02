@@ -26,6 +26,7 @@ export function DropDownActions({onEdit, onDelete}: DropDownActionsProps){
                 key="edit" 
                 startContent={<Pencil size={18} />} 
                 onClick={onEdit}
+                style={{ color: 'black' }}
             >
                 editar
             </DropdownItem>
