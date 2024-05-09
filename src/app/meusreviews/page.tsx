@@ -26,16 +26,16 @@ export default async function Reviews() {
         
         <div className="mx-10">
         <h2 className="flex justify-start p-5 italic">Aqui estão os seus reviews!</h2>
-        <section className="bg-[#0E0D17] rounded-[20px] w-5/6 p-2 m-4">
-          <h2 className="text-2xl font-semibold pt-6 ps-5" >Meus Reviews</h2>
+        <section className="flex flex-row bg-[#0E0D17] rounded-[20px] w-full p-2 m-4">
+          <h2 className="text-2xl font-semibold pt-6 ps-5" >Reviews</h2>
           <Link href="/meusreviews/new" className="flex p-4 pt-5">
             <Button isIconOnly color="default" size="sm"><Plus /></Button>
           </Link>
-        </section>
-
          <ReviewsBoard
               reviews={reviews.content} 
           />
+        </section>
+
 
         </div>
       </div>

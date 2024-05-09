@@ -3,7 +3,7 @@
 import { redirect } from "next/navigation"
 
 export async function create(prevState: any, formData: FormData){
-    await new Promise(r => setTimeout(r, 1000))
+    await new Promise(r => setTimeout(r, 2000))
 
     const data = {
         filmes: {
@@ -30,7 +30,8 @@ export async function create(prevState: any, formData: FormData){
     
     if (resp.status == 400){
         return {
-          messageNome: "Validação falhou"
+            message_comentario: "Validação falhou",
+            message_rating: "Validação falhou",
         }
     }
 
