@@ -2,7 +2,6 @@
 
 import { redirect } from "next/navigation"
 
-
 export async function destroy(id: number){
 
     await new Promise(r => setTimeout(r, 3000))
@@ -11,10 +10,9 @@ export async function destroy(id: number){
         method: "DELETE"
     }
 
-    const resp = await fetch(`${process.env.BOMB_API_URL}/filmes/${id}`, options)
+    const resp = await fetch(`${process.env.BOMB_API_URL}/meusreviews/${id}`, options)
 
     if (resp.ok){
-        redirect("/filmes")
+        redirect("/meusreviews")
     }
-   
 }
